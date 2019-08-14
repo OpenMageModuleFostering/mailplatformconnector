@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package>
     <name>mailplatformconnector</name>
-    <version>1.0.1</version>
+    <version>2.0.1.4</version>
     <stability>stable</stability>
-    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
     <extends/>
     <summary>Sign-up for a free 30 days trial of award winning MailPlatform email marketing system - and connect Magento.</summary>
-    <description>MailPlatform is a danish company serving large international and national retailers. Among the reference customers are: BoConcept, Toyota, Blockbuster, Guldbageren, Kop &amp;amp; Kande, TravelMarket, Skoringen, Zjoos, NEYE and hundreds of other clients.&#xD;
+    <description>MailPlatform is a danish company serving large international and national retailers. Among the reference customers are: BoConcept, Toyota, Blockbuster, Guldbageren, Kop &amp;amp;amp; Kande, TravelMarket, Skoringen, Zjoos, NEYE and hundreds of other clients.&#xD;
 &#xD;
 Try us for free the first month, signup here:&#xD;
 (all european countries)&#xD;
@@ -27,9 +27,9 @@ Alternated code by Magento standards&#xD;
 Corrected English grammar&#xD;
 Tested on Magento CE 1.7, 1.8 and 1.9</notes>
     <authors><author><name>ADEO WEB</name><user>adeoweb</user><email>info@adeoweb.biz</email></author></authors>
-    <date>2015-07-01</date>
-    <time>14:54:44</time>
-    <contents><target name="magecommunity"><dir name="Mp"><dir name="Mailplatform"><dir name="Block"><dir name="Adminhtml"><dir name="Newsletter"><file name="Subscriber.php" hash="c493b153d8a1fb000b84695c04f3424f"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="43f52f0bc701ffd903d9e1cd88bcbc91"/></dir><dir name="Model"><file name="Emailtype.php" hash="f36192a5e1049df8794c5b76b8531b44"/><file name="Listids.php" hash="9962e23f391753c58389351c78763294"/><dir name="Mailplatform"><file name="Emailtype.php" hash="a1642c3a488fdf2bd4dc209d445d9e3c"/><file name="Listids.php" hash="0c459e26f6064dd59dd4b3a6f0551d82"/><file name="Mailplatform.php" hash="a418ea5de60146650d5bd8b95f0c2eef"/></dir><file name="Mailplatform.php" hash="951d2ec0a92d6b64a2e00992f4c90797"/><dir name="Newsletter"><file name="Subscriber.php" hash="dc4425c7238597310bce656fef96e297"/></dir></dir><dir name="controllers"><file name="AccountController.php" hash="27adffc92b19306ce4b1bd81a621a59c"/><file name="IndexController.php" hash="c51427dd3d390822dfd41995a3de99e5"/></dir><dir name="etc"><file name="config.xml" hash="d835123d7c5ef961f93de038928ab938"/><file name="system.xml" hash="c146365b6c17fdde937698a2e5817d25"/></dir><dir name="sql"><dir name="mp_mailplatform_setup"><file name="mysql4-install-0.0.1.php" hash="d41d8cd98f00b204e9800998ecf8427e"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mp_Mailplattform.xml" hash="4a03e6902800e6435720616ed9c29826"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="newsletter"><dir name="subscriber"><file name="list_mailplatform.phtml" hash="9360f96d57fb8c9d2ade7b2cd564f5d7"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <date>2016-01-11</date>
+    <time>16:07:44</time>
+    <contents><target name="magecommunity"><dir name="Mp"><dir name="Mailplatformconnector"><dir name="Block"><dir name="Adminhtml"><dir name="Newsletter"><file name="Subscriber.php" hash="9901b2d57542e349752d4f632bea7170"/></dir><dir name="System"><dir name="Config"><dir name="Form"><dir name="Button"><file name="Synccategories.php" hash="108b23568036ae66d5d7a53372d39765"/></dir></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="460bd421f2d1cae46d836f7476c6d1bd"/></dir><dir name="Model"><file name="Cron.php" hash="1d732e1658c12f3319512318740f0f1a"/><file name="Customfields.php" hash="2a0f3492c3ae037707e279ddaa2bd995"/><file name="Emailtype.php" hash="27b95214db75122aa1f6556ae88327cd"/><file name="Listids.php" hash="33936c75d680ce565b005c9e6799a4f8"/><file name="Lists.php" hash="51b49db45a11d140625224c313b62a1d"/><dir name="Newsletter"><file name="Subscriber.php" hash="dd98f7df8a47d4ecfa1f6ed544fdca09"/></dir><file name="Observer.php" hash="2b8f748a82f7d214b6b8185b0e07ed50"/><file name="Request.php" hash="110eebef447266083128b42e3d70eda1"/><file name="Subscribers.php" hash="f4448ae3f4abaa78e312c3de10716790"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="MailplatformController.php" hash="c94c5a6b2eea1772f7689036c5a6a3f3"/></dir></dir><dir name="etc"><file name="config.xml" hash="17b762a76865d39393865ec3ea22dc9d"/><file name="system.xml" hash="d63afb1f6985b997681db56e2f80cda1"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="mailplatform"><dir name="system"><dir name="config"><file name="button.phtml" hash="40ab0b3d92804a2615bf37c49acccc7f"/></dir></dir></dir><dir name="newsletter"><dir name="subscriber"><file name="list_mailplatform.phtml" hash="9bffb3df04915841e4d5a1e944d45e92"/></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="mailplatform.xml" hash="1df8de008ac6f160b07608bfc0c2a7ef"/></dir><dir name="template"><dir name="mailplatform"><dir name="checkout"><file name="subscribe.phtml" hash="9684b12953688eea04d76e9ea2ed3e43"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mp_Mailplatformconnector.xml" hash="14ea619d56358be2ca54d99ca0d6bf6e"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

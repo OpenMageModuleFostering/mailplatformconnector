@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <checkout_onepage_review>
+        <reference name="checkout.onepage.review.info.items.after">
+            <block type="core/template" name="is_subscribed" template="mailplatform/checkout/subscribe.phtml" />
+        </reference>
+    </checkout_onepage_review>
+</layout>

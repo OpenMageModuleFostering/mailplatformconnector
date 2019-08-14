@@ -1,0 +1,14 @@
+<?php if (Mage::helper('mailplatform')->isEnabled()): ?>
+    <input id="frontend-is-subscribe" type="checkbox" name="is_subscribed" title="<?php echo $this->__('Subscribe to newsletter') ?>" checked="checked" />
+    <label for="is_subscribed"><?php echo $this->__('Subscribe to newsletter') ?></label>
+    <script type="text/javascript">
+        if (! jQuery('#co-payment-form').find('input[name="is_subscribed"]').length) {
+            jQuery('#co-payment-form').append('<input name="is_subscribed" type="hidden" value="1">');
+        }
+
+        jQuery('#frontend-is-subscribe').on('change', function() {
+            var val = jQuery(this).prop('checked') ? 1 : 0;
+            jQuery('#co-payment-form').find('input[name="is_subscribed"]').val(val);
+        });
+    </script>
+<?php endif ?>

@@ -1,0 +1,17 @@
+<?php echo $this->getButtonHtml() ?>
+<div id="<?php echo $this->getResponseFieldId() ?>" class="response" style="display: none" ></div>
+
+<script type="text/javascript">
+    document.getElementById("<?php echo $this->getButtonId() ?>").addEventListener("click", function() {
+        var div = document.getElementById('<?php echo $this->getResponseFieldId() ?>');
+        div.style.display = "block";
+        new Ajax.Request("<?php echo $this->getAjaxCheckUrl() ?>", {
+            'onComplete': function(response) {
+                div.innerHTML = response.responseText;
+            },
+            'onFailure': function( $response ) {
+                div.innerHTML = '<?php echo $this->__('Status: ') ?>' + response.status;
+            }
+        });
+    });
+</script>

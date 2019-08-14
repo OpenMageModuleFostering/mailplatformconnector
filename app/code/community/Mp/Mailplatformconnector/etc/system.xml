@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <mailplatform translate="label" module="newsletter">
+            <class>separator-top</class>
+            <label>Mailplatform Configuration</label>
+            <tab>customer</tab>
+            <sort_order>109</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <username translate="label comment">
+                            <label>API Username</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The username used in the XML API requests.</comment>
+                        </username>
+                        <token translate="label comment">
+                            <label>API token</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This token is what the user needs to include in their
+                                XML requests. If this token is not present in the XML request or
+                                does not match what is set here, the request will fail.
+                            </comment>
+                        </token>
+                        <listid translate="label comment">
+                            <label>List id</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>mailplatform/listids</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>The mailplatform list id where customers will be
+                                added/removed
+                            </comment>
+                        </listid>
+                        <url translate="label comment">
+                            <label>XML-RPC URL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This is the path to the file where all XML API requests
+                                should be sent.
+                            </comment>
+                        </url>
+                        <sync_cat_button translate="label">
+                            <label>Categories</label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>mailplatform/adminhtml_system_config_form_button_synccategories</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sync_cat_button>
+                    </fields>
+                </general>
+                <subscribe>
+                    <label>Subscribe options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <firstname translate="label comment">
+                            <label>Custom Field "Firstname" ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>ID must match mailplatform's custom field ID.</comment>
+                        </firstname>
+                        <lastname translate="label comment">
+                            <label>Custom Field "Lastname" ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>ID must match mailplatform's custom field ID.</comment>
+                        </lastname>
+                        <city translate="label comment">
+                            <label>Custom Field "City" ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>ID must match mailplatform's custom field ID.</comment>
+                        </city>
+                        <purchase_date translate="label comment">
+                            <label>Custom Field "Purchase Date" ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>ID must match mailplatform's custom field ID.</comment>
+                        </purchase_date>
+                        <product_categories translate="label comment">
+                            <label>Custom Field "Product Categories" ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>ID must match mailplatform's custom field ID.</comment>
+                        </product_categories>
+                        <opt-in translate="label comment">
+                            <label>Opt-in</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Set the Opt-in IP fields.</comment>
+                        </opt-in>
+                        <email_type translate="label">
+                            <label>Email type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>mailplatform/emailtype</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Email type preference for the email</comment>
+                        </email_type>
+                        <double_optin translate="label">
+                            <label>Double optin</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Flag to control whether a double opt-in confirmation message is sent.</comment>
+                        </double_optin>
+                        <update_existing translate="label">
+                            <label>Update existing</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Flag to control whether a existing subscribers should be
+                                updated instead of throwing and error
+                            </comment>
+                        </update_existing>
+                    </fields>
+                </subscribe>
+                <unsubscribe>
+                    <label>Unsubscribe options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <delete_member translate="label">
+                            <label>Delete members</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Flag to completely delete the member from your list
+                                instead of just unsubscribing
+                            </comment>
+                        </delete_member>
+                        <send_goodbye translate="label">
+                            <label>Send goodbye</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Flag to send the goodbye email to the email address
+                            </comment>
+                        </send_goodbye>
+                        <send_notify translate="label">
+                            <label>Send notify</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Flag to send the unsubscribe notification email to the
+                                address defined in the list email notification settings
+                            </comment>
+                        </send_notify>
+                        <sendthankyou translate="label">
+                            <label>Send Thank You</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Specifies if thank you email should be send for the unsubscribed contact.</comment>
+                        </sendthankyou>
+                    </fields>
+                </unsubscribe>
+                <log>
+                    <label>Log settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <error translate="label">
+                            <label>Enable Error log</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enable logs on XML API request error.</comment>
+                        </error>
+                        <success translate="label">
+                            <label>Enable Success log</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enable logs on XML API request success.</comment>
+                        </success>
+                        <file_name translate="label comment">
+                            <label>Log file name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>XML API request log file name.</comment>
+                        </file_name>
+                    </fields>
+                </log>
+                <crontab>
+                    <label>Crontab settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <sync_subscribers translate="label">
+                            <label>Enable Sync Subscribers</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Every 12 h. sync enabled users.</comment>
+                        </sync_subscribers>
+                        <sync_categories translate="label">
+                            <label>Enable Sync "Product Categories"</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Every 12 h. sync custom field "Product Categories" values.</comment>
+                        </sync_categories>
+                    </fields>
+                </crontab>
+            </groups>
+        </mailplatform>
+    </sections>
+</config>
