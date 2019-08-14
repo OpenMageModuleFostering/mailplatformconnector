@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/mailplatformconnector",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Sign-up for a free 30 days trial of award winning MailPlatform email marketing system - and connect Magento.",
+    "authors": [
+    {
+        "name": "ADEO WEB",
+        "email": "info@adeoweb.biz"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,35 @@
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td style="width: 50%;"><h3><?php echo $this->__('Newsletter Subscribers') ?></h3></td>
+            <td align="right">
+                <button type="button" class="scalable"
+                    onclick="window.location='<?php echo $this->getMailplatformSyn() ?>'"
+                    style="">
+                    <span>Mailplatform Batch Synchronization</span>
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <b>Batch Sync is intended for <300 subscribers. Is your database is
+        larger please export it in Magento and import in MailPlatform. Contact
+        support@mailplatform.dk for further help.<br />&nbsp;
+    </b>
+</div>
+<div>
+    <?php echo $this->getChildHtml('grid')?>
+</div>
+<?php if(count($this->getQueueAsOptions()) > 0 && $this->getShowQueueAdd()): ?>
+<div class="form-buttons">
+    <select id="queueList" name="queue">
+    <?php foreach ($this->getQueueAsOptions() as $_queue): ?>
+        <option value="<?php echo $_queue['value'] ?>"><?php echo $_queue['label'] ?> #<?php echo $_queue['value'] ?></option>
+    <?php endforeach; ?>
+    </select>
+    <button class="scalable" onclick="subscriberController.addToQueue();">
+        <span><?php echo $this->__('Add to Queue'); ?></span>
+    </button>
+</div>
+<?php endif ?>
