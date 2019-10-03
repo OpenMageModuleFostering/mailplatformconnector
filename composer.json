@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/mailplatformconnector",
+    "name": "openmage-module-fostering\/mailplatformconnector",
     "type": "magento-module",
-    "license": "OSL-v3.0",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Sign-up for a free 30 days trial of award winning MailPlatform email marketing system - and connect Magento.",
     "authors": [

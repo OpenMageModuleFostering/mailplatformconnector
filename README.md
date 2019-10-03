@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Sign-up for a free 30 days trial of award winning MailPlatform email marketing system - and connect Magento.
